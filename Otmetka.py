@@ -1,17 +1,19 @@
 def otmetka_prosmotra(num_elemen: int, where: str):
     from Main import Create_dict, Write
     from main_2 import new_sort_dict
-    later_po = open('Буду смотреть(по порядку).txt', 'r', encoding='UTF-8')
-    if where == '+': # В зависимости, от того, что выбрал пользователь, открывается нужный файл
-        pros_po = open('Просмотренные(по порядку).txt', 'r', encoding='UTF-8')
-        name_file = 'Просмотренные(по порядку).txt'
+    later_po = open('text files/planned.txt', 'r', encoding='UTF-8')
+    if where == '+':  # В зависимости, от того, что выбрал пользователь, открывается нужный файл
+        pros_po = open('text files/completed.txt', 'r', encoding='UTF-8')
+        name_file = 'completed.txt'
     elif where == '-':
-        pros_po = open('Брошено.txt', 'r', encoding='UTF-8')
-        name_file = 'Буду смотреть(по порядку).txt'
-    list_later = later_po.readlines() # Получаем строки из файла в виде списка
+        pros_po = open('text files/dropped.txt', 'r', encoding='UTF-8')
+        name_file = 'dropped.txt'
+    list_later = later_po.readlines()  # Получаем строки из файла в виде списка
     list_pros = pros_po.readlines()  # Получаем строки из файла в виде списка
-    dict_pros = Create_dict(len(list_pros), list_pros) # Преобразуем список в словарь с помощью функции Create_dict
-    dict_later = Create_dict(len(list_later), list_later) # Преобразуем список в словарь с помощью функции Create_dict
+    # Преобразуем список в словарь с помощью функции Create_dict
+    dict_pros = Create_dict(len(list_pros), list_pros)
+    # Преобразуем список в словарь с помощью функции Create_dict
+    dict_later = Create_dict(len(list_later), list_later)
     for key, item in list(dict_later.items()):
         # удаляем выбранный элемент из словаря dict_later, а затем этот же элемент добавляем в dict_pros
         if key == num_elemen:
@@ -26,15 +28,16 @@ def otmetka_prosmotra(num_elemen: int, where: str):
             list_later.remove(i)
             list_pros.append(i)
     """
-    later_po = open('Буду смотреть(по порядку).txt', 'w', encoding='UTF-8')
-    if where == '+': # В зависимости, от того, что выбрал пользователь, открывается нужный файл
-        pros_po = open('Просмотренные(по порядку).txt', 'w', encoding='UTF-8')
+    later_po = open('text files/planned.txt', 'w', encoding='UTF-8')
+    if where == '+':  # В зависимости, от того, что выбрал пользователь, открывается нужный файл
+        pros_po = open('text files/completed.txt', 'w', encoding='UTF-8')
     elif where == '-':
-        pros_po = open('Брошено.txt', 'w', encoding='UTF-8')
-     
-    Write(new_sort_dict(dict_later), later_po, True) # записываем в файл Буду смотреть(по порядку)
-    Write(new_sort_dict(dict_pros), pros_po, True) # записываем в файл Просмотренные(по порядку)
+        pros_po = open('text files/dropped.txt', 'w', encoding='UTF-8')
 
+    # записываем в файл planned.txt
+    Write(new_sort_dict(dict_later), later_po, True)
+    # записываем в файл completed.txt // dropped.txt
+    Write(new_sort_dict(dict_pros), pros_po, True)
 
     later_po.close()
     pros_po.close()

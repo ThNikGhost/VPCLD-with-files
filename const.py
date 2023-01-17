@@ -1,5 +1,5 @@
-file_bd_w = open('Буду смотреть(по порядку).txt', 'w', encoding='UTF-8')
-file_pr_w = open('Просмотренные(по порядку).txt', 'w', encoding='UTF-8')
+file_bd_w = open('text files/planned.txt', 'w', encoding='UTF-8')
+file_pr_w = open('text files/completed.txt', 'w', encoding='UTF-8')
 file_pr_r = open(r'C:\Games\Просмотренные(по порядку).txt', 'r', encoding='UTF-8')
 file_bd_r = open(r'C:\Games\Буду смотреть(по порядку) .txt', 'r', encoding='UTF-8')
 from Main import Create_dict, Write

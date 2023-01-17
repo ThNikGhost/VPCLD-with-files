@@ -1,12 +1,12 @@
 def Print(x: str): # упрощаю для себя вывод инфы с файла
     if x == 'pros':
-        pros = open('Просмотренные(по порядку).txt', 'r', encoding='UTF-8')
+        pros = open('text files/completed.txt', 'r', encoding='UTF-8')
         print(''.join(pros.readlines()))
     elif x == 'later_po':
-        later_po = open('Буду смотреть(по порядку).txt', 'r', encoding='UTF-8')
+        later_po = open('text files/planned.txt', 'r', encoding='UTF-8')
         print(''.join(later_po.readlines()))
     elif x == 'later_ra':
-        later_ra = open('Буду смотреть(рандом).txt', 'r', encoding='UTF-8')
+        later_ra = open('text files/planned(random).txt', 'r', encoding='UTF-8')
         print(''.join(later_ra.readlines()))
 
 # Отрезаем число перед элементом. Пример: ["1. Яблоко", "2. Апельсин"] --> ["Яблоко", "Апельсин"]
@@ -36,8 +36,8 @@ def new_sort_dict(x: dict):
     new_dict = Create_dict(len(list_str), list_str)
     return new_dict
 
-# Выводит рандомный элемент из списка Буду смотреть(по порядку).txt
+# Выводит рандомный элемент из списка planned.txt
 def Random_element():
     import random
-    file = open('Буду смотреть(по порядку).txt', 'r', encoding='UTF-8')
+    file = open('text files/planned.txt', 'r', encoding='UTF-8')
     print(random.choice(file.readlines()))

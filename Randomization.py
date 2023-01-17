@@ -1,8 +1,8 @@
 # Рандомит список из "Буду смотреть(по порядку).txt" в "Буду смотреть(рандом).txt"
 from random import shuffle
 from Main import Create_dict, Write
-later_po = open('Буду смотреть(по порядку).txt', 'r', encoding='UTF-8')
-later_ran = open('Буду смотреть(рандом).txt', 'w', encoding='UTF-8')
+later_po = open('text files/planned.txt', 'r', encoding='UTF-8')
+later_ran = open('text files/planned(random).txt', 'w', encoding='UTF-8')
 
 text_sorted = later_po.readlines()  # получает данные из файла "Буду смотреть(по порядку).txt"
 shuffle(text_sorted) # разбрасывает элементы
