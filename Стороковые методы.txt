@@ -1,0 +1,119 @@
+----------------CASEFOLD
+text = 'MARIo'  
+print(text.casefold())
+---> mario
+Переводит в регистр, который позволит сравнить с такой же строкой
+
+----------------CENTER
+text = 'Luigi'
+print(text.center(20, '.'))  
+--->   .......Luigi........
+Позволяет выводить текст по центру, добавляя различные символы (По-умолчнию: пробел)
+
+----------------COUNT
+text = 'abc_abc_abc_abc' 
+print(text.count('ab') 
+---> 4
+Позволяет подсчитывать, сколько таких символов есть в строке
+
+----------------ENCODE
+text = 'Elon Musk'
+print(text.encode(encoding='UTF-8', errors='strict'))
+---> b'Elon Musk'
+Позволяет кодировать строку в систему, которая нам нужна. errors необязательный параметр, он выводит то что указано, в случае ошибки кодирования. b - означает байтовую версию
+
+----------------ENDSWITH
+text = 'apple'
+print(text.endswith('e'))
+---> True
+text = 'appla'
+print(text.endswith(('e', 'a')))
+---> True
+text = 'applz'
+print(text.endswith(('e', 'a')))
+---> False
+Проверяет заканчивается ли строка на указаный(ные) символ(ы)
+
+----------------EXPANDTABS
+text = 'text\ttext2\ttext3' 
+print(text.expandtabs(10))
+---> text          text2          text3
+Просто написанный \t создаёт 4 пробела, а с помощью этого метода, мы указываем скольки пробелам равен \t
+
+----------------FIND
+text = 'Remember to comment and subscribe!'
+position = text.find('subscribe!')
+print(position)
+---> 24
+print(text[position:])
+---> subscribe!
+Этот метод находит в строке, то что мы указываем и выдаёт целое число, которое означает позицию первого символа, в данном случае позицию 's'
+В случае, если он не нашёл указанные символы, то выдаст -1
+
+----------------FORMAT
+text = '{sub} is doing: {action}.'
+print(text.format(sub='cat', action='meow))
+---> Cat is doing: meow.
+text = '{} is doing: {}.'
+print(text.format('Cat', 'meow'))
+---> Cat is doing: meow.
+Вот таким образом можно выводить строки с переменными, форматируя их сразу, без "+" или ","
+
+----------------FORMAT_MAP
+coordinates = {'x': 10, 'y'= -5}
+text = 'Coordinates: ({x}, {y})'
+print(text.format_map(coordinates))
+
+----------------INDEX
+str = 'Apple, Juice, Banana, Milk'
+pos = text.index('Banana')
+print(pos)
+---> 14
+str = 'Apple, Juice, Banana, Milk'
+pos = text.index('assasas')
+print(pos)
+---> ValueError: substring not found
+Делает то же, что и find, но если не найдёт, что надо, то выдаст ошибку
+
+----------------ISALNUM
+text = 'hellokitty123'
+print(text.isalnum())
+---> True
+text = 'hellokitty123!'
+print(text.isalnum())
+---> False
+Проверяет, состоит ли строка из букв и цифры, во втором случае выдал False, потому что добавился "!", он не буква и не цифра
+
+----------------ISALPHA
+text = 'hellokitty123'
+print(text.isalpha())
+---> False
+text = 'hellokitty'
+print(text.isalpha())
+---> True
+Проверяет состоит ли строка только из букв
+
+----------------ISASCII
+text = 'Hello©'
+print(text.isascii())
+---> False
+text = 'Hello'
+print(text.isascii())
+---> True
+Проверяет, состоит ли строка только из символов таблицы ASCII
+
+----------------ISDECIMAL
+text = '123'
+print(text.isdecimal())
+---> True
+Не спрашивайте как оно работает, но оно првоеряет состоит ли строка из обычных чисел
+
+----------------ISDIGIT
+text = '➀➁➂➃➄➅➆➇➈'
+print(text.isdigit())
+---> True
+
+----------------ISNUMERIC
+text = '一二三四五六七八九'
+print(text.isnumeric())
+---> True
