@@ -11,6 +11,7 @@ def Print(x: str): # упрощаю для себя вывод инфы с фа�
     elif x == 'dropped':
         file = open('text files/dropped.txt', 'r', encoding='UTF-8')
         print(''.join(file.readlines()))
+
 # Отрезаем число перед элементом. Пример: ["1. Яблоко", "2. Апельсин"] --> ["Яблоко", "Апельсин"]
 def Srez(list: list):
     empty_list = []
@@ -28,6 +29,7 @@ def new_sort_list(x: list):
     x = Srez(x)
     x = sorted(x)
     return x
+
 # сортирую словарь
 def new_sort_dict(x: dict):
     from Main import Create_dict
@@ -43,3 +45,13 @@ def Random_element():
     import random
     file = open('text files/planned.txt', 'r', encoding='UTF-8')
     print(random.choice(file.readlines()))
+
+# Добавляет элемент в файл
+def func_check(str: str):
+    from Otmetka import otmetka_prosmotra
+    try:
+        num_element = int(input("Введите номер аниме: "))
+        otmetka_prosmotra(num_element, str)
+    except ValueError:
+        print('Пожалуйста, будьте внимательнее, вы где-то допустили ошибку.')
+    
