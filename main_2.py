@@ -1,14 +1,16 @@
 def Print(x: str): # упрощаю для себя вывод инфы с файла
-    if x == 'pros':
-        pros = open('text files/completed.txt', 'r', encoding='UTF-8')
-        print(''.join(pros.readlines()))
-    elif x == 'later_po':
-        later_po = open('text files/planned.txt', 'r', encoding='UTF-8')
-        print(''.join(later_po.readlines()))
-    elif x == 'later_ra':
-        later_ra = open('text files/planned(random).txt', 'r', encoding='UTF-8')
-        print(''.join(later_ra.readlines()))
-
+    if x == 'completed':
+        file = open('text files/completed.txt', 'r', encoding='UTF-8')
+        print(''.join(file.readlines()))
+    elif x == 'planned':
+        file = open('text files/planned.txt', 'r', encoding='UTF-8')
+        print(''.join(file.readlines()))
+    elif x == 'liked':
+        file = open('text files/liked.txt', 'r', encoding='UTF-8')
+        print(''.join(file.readlines()))
+    elif x == 'dropped':
+        file = open('text files/dropped.txt', 'r', encoding='UTF-8')
+        print(''.join(file.readlines()))
 # Отрезаем число перед элементом. Пример: ["1. Яблоко", "2. Апельсин"] --> ["Яблоко", "Апельсин"]
 def Srez(list: list):
     empty_list = []
