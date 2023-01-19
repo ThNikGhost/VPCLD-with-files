@@ -2,5 +2,5 @@ test/
 test/test.txt
 __pycache__/
 .vscode/
-text files/
+#text files/
 trash/
