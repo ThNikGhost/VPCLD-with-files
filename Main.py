@@ -27,7 +27,7 @@ def Srez(list: list):
     return tuple_str"""
 
 # Создаём словарь ("х" - длина спика "у")
-def Create_dict(x: int, y: list):
+def Create_dict(x: int, y: list):  
     list_int = []
     dict_text = {}
     y = Srez(y)
