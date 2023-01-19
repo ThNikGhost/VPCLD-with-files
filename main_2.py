@@ -2,15 +2,19 @@ def Print(x: str): # упрощаю для себя вывод инфы с фа�
     if x == 'completed':
         file = open('text files/completed.txt', 'r', encoding='UTF-8')
         print(''.join(file.readlines()))
+        file.close()
     elif x == 'planned':
         file = open('text files/planned.txt', 'r', encoding='UTF-8')
         print(''.join(file.readlines()))
+        file.close()
     elif x == 'liked':
         file = open('text files/liked.txt', 'r', encoding='UTF-8')
         print(''.join(file.readlines()))
+        file.close()
     elif x == 'dropped':
         file = open('text files/dropped.txt', 'r', encoding='UTF-8')
         print(''.join(file.readlines()))
+        file.close()
 
 # Отрезаем число перед элементом. Пример: ["1. Яблоко", "2. Апельсин"] --> ["Яблоко", "Апельсин"]
 def Srez(list: list):
@@ -55,3 +59,6 @@ def func_check(str: str):
     except ValueError:
         print('Пожалуйста, будьте внимательнее, вы где-то допустили ошибку.')
     
+#Спрашивать продолжить или закрыть программу
+
+

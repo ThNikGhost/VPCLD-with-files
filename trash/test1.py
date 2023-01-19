@@ -1,6 +1,20 @@
 from rich import print
-# vvod = input(' [red]1.[blue]Вывести списки. \n 2.Пометить аниме как брошенное\просмотренное\любимое \n 3.Другое \n --Выход: qq \n ----> ')
-# print('[blue]vvod')
+import os
+from rich.text import Text
+text = Text.tab_size(10)
+txt = 'Hi'
+print(txt.text)
+'''
+while True:
+    os.system('cls')
+    co1 = input('Первый цвет: ')
+    co2 = input('Второй цвет: ')
+    print(f'[{co1}] 1.[{co2}]Вывести списки. \n [{co1}]2.[{co2}]Пометить аниме как брошенное\просмотренное\любимое \n [{co1}]3.[{co2}]Другое \n --Выход: qq \n ----> ')
+    input()
+    print('Hello')
+    if co1 == 'qq':
+        break
 
-print('[red1] 1.[blue]Вывести списки. \n [red1]2.[blue]Пометить аниме как брошенное\просмотренное\любимое \n [red1]3.[blue]Другое \n --Выход: qq \n ----> ', end='')
-# input('')
+'''
+# sky_blue2 - light_sky_blue3
+
