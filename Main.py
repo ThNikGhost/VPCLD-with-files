@@ -10,22 +10,6 @@ def Srez(list: list):
     else:
         return list
 
-
-# Добавляет каждому элементу его число (Пример: 1. Название\n, 2. Название и т.д.)
-
-"""def Sort(x, y):
-    tuple_int = []
-    tuple_str = []
-    y = Srez(y)
-    for n in range(1, x+1):
-        tuple_int.append(n)  # создаём список с количеством элементов в полученном содержимом
-    for d in range(0, x):
-        stro = "{}{} {}".format(tuple_int[d], '.', y[d])
-        tuple_str.append(stro)
-    if '\n' not in tuple_str[x-1]:
-        tuple_str[x-1] = tuple_str[x-1] + '\n'
-    return tuple_str"""
-
 # Создаём словарь ("х" - длина спика "у")
 def Create_dict(x: int, y: list):  
     list_int = []
@@ -38,13 +22,6 @@ def Create_dict(x: int, y: list):
         dict_text[x] = dict_text[x] + '\n'
     return dict_text
 
-
-'''
-# Запись списка "x" в файл "у"
-def Write(x: tuple, y):
-    for i in x:
-        y.write(i)    
-'''
 # Делаем из элементов словаря список, либо список из значений, либо список из ключей
 def Get_list_from_dict(dict_:dict, what:str):
     new_list = []
@@ -55,7 +32,6 @@ def Get_list_from_dict(dict_:dict, what:str):
         for key, value in dict_.items():
             new_list.append(key)  # Создаём список с ключами(key)
     return new_list
-
 
 # записываем данные словаря "х" в файл "у", Sort ответственнен за то, будет ли сортироваться список перед записью в файл
 def Write(x: dict, y, sort: bool = False):
@@ -69,21 +45,3 @@ def Write(x: dict, y, sort: bool = False):
         for key,value in x.items(): 
             text = ('{}{} {}'.format(key, '.', value))
             y.write(text)
-
-    
-
-
-
-'''
-def later_po(x):
-    file_po = open('Буду смотреть(по порядку).txt', x, encoding='UTF-8')
-    return file_po
-
-def later_ran(x):
-    file_ra = open('Буду смотреть(рандом).txt', x, encoding='UTF-8')
-    return file_ra
-
-def pros_po(x):
-    pros_sorted = open('Просмотренные(по порядку).txt', x, encoding='UTF-8')
-    return pros_sorted
-'''

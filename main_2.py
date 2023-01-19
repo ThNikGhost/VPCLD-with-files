@@ -31,6 +31,7 @@ def Create_table_and_output(list_: list):
             f'[purple4]{key}', f'[medium_purple3]{value[:-1]}'
         )
     console.print(table)
+
 # Отрезаем число перед элементом. Пример: ["1. Яблоко", "2. Апельсин"] --> ["Яблоко", "Апельсин"]
 def Srez(list: list):
     empty_list = []
