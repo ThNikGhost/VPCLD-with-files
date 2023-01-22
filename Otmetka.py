@@ -1,6 +1,7 @@
 def otmetka_prosmotra(num_elemen: int, where: str):
     from Main import Create_dict, Write
     from main_2 import new_sort_dict
+    from rich import print
 
     file_planned = open('text files/planned.txt', 'r', encoding='UTF-8')
     
@@ -28,7 +29,7 @@ def otmetka_prosmotra(num_elemen: int, where: str):
             del dict_planned[num_elemen]
             new_key = '*' + str(key)
             dict_file[new_key] = item
-            print(f'Аниме "{item[:-1]}" было перемещено в список {name_file}')
+            print(f'[light_sky_blue3]Аниме [purple4]"{item[:-1]}"[light_sky_blue3] было перемещено в список [green]{name_file}')
             break
 
     file_planned = open('text files/planned.txt', 'w', encoding='UTF-8')

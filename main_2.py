@@ -72,15 +72,6 @@ def Random_element():
 def func_check(str: str):
     from rich import print
     from Otmetka import otmetka_prosmotra
-    #try:
     print('[sky_blue2]Введите номер аниме: ', end='')
-    num_element = input()
+    num_element = int(input())
     otmetka_prosmotra(num_element, str)
-    #except ValueError:
-    #    print('[sky_blue2]Пожалуйста, будьте внимательнее, вы где-то допустили ошибку.')
-    #    func_check(str)
-    
-#Спрашивать продолжить или закрыть программу
-def ask_continue_or_break():
-    pass
-

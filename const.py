@@ -1,7 +1,7 @@
 file_bd_w = open('text files/planned.txt', 'w', encoding='UTF-8')
 file_pr_w = open('text files/completed.txt', 'w', encoding='UTF-8')
-file_pr_r = open(r'C:\Games\Просмотренные(по порядку).txt', 'r', encoding='UTF-8')
-file_bd_r = open(r'C:\Games\Буду смотреть(по порядку) .txt', 'r', encoding='UTF-8')
+file_pr_r = open('file_const/completed(sort).txt', 'r', encoding='UTF-8')
+file_bd_r = open('file_const/planned(sort).txt', 'r', encoding='UTF-8')
 from Main import Create_dict, Write
 
 # Записываю из файла на рабочем столе, в файл в папке "Просмотренные(по порядку)"

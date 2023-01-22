@@ -23,10 +23,6 @@ while True:
             Print('dropped') #Выводит dropped.txt
         elif vvod_2 == '4':
             Print('liked') #Выводит liked.txt
-        print(f'[{co1}]Закрыть программу или продолжить? \n [{co1}]1.[{co2}]Закрыть. \n [{co1}]2.[{co2}]Продолжить. \n ----> ', end='')
-        vvod_3 = input()
-        if vvod_3 == '1':
-            break
     elif vvod == '2':
         os.system('cls')
         print(f'[{co1}]Что хотите пометить?'.center(50))
@@ -41,15 +37,16 @@ while True:
         elif vvod_2 == '3':
             Print('planned')#Выводит planned.txt
             func_check('liked') #Переносит нужное аниме в список liked.txt
+    
     elif vvod == '3':
         os.system('cls')
         print(f'[{co1}]1.Вывести рандомное аниме. \n ---> ', end='')
         vvod_3 = input()
         if vvod_3 == '1':
             Random_element()
-        print(f'[{co1}]Закрыть программу или продолжить? \n [{co1}]1.[{co2}]Закрыть. \n [{co1}]2.[{co2}]Продолжить. \n ----> ', end='')
-        vvod_3 = input()
-        if vvod_3 == '1':
-            break
+
     elif vvod == 'qq':
         break
+    print(f'\n [{co1}]Закрыть программу или продолжить? \n [{co1}]1.[{co2}]Закрыть. \n [{co1}]2.[{co2}]Продолжить. \n ----> ', end='')
+    vvod_3 = input()
+    if vvod_3 == '1': break
