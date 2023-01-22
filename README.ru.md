@@ -171,6 +171,6 @@ ThGhost(Nikita) - [@Телеграм](https://t.me/TheNikGreat) - orlov.icloud@m
 [Python.py]: https://img.shields.io/badge/Python-35495E?style=for-the-badge&logo=python&logoColor=blue
 [Python-url]: https://www.python.org/
 [license-shield]: https://img.shields.io/github/license/ThNikGhost/The-system--V-P-C-L-D-work-with-files.svg?style=for-the-badge
-[license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/66f74f825892ecb87a2333d17804b0784b2644f2/LICENSE
+[license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/work-with-files/LICENSE
 [langen-shield]: https://img.shields.io/badge/lang-en-red
-[langen-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/abd47b5338df1c1e87605bbe06fd883857e59f99/README.md
+[langen-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/work-with-files/README.md
