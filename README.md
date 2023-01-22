@@ -106,7 +106,7 @@ There is no way to add your own list yet, but if you want to try with a test set
     - [ ] Englisg
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
