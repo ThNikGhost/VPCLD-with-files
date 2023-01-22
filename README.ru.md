@@ -38,20 +38,20 @@
     <li>
       <a href="#О-проекте">О проекте</a>
       <ul>
-        <li><a href="#built-with">Построено с помощью</a></li>
+        <li><a href="#Построено-с-помощьюh">Построено с помощью</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Начало работы</a>
+      <a href="#Начало-работы">Начало работы</a>
       <ul>
-        <li><a href="#installation">Установка</a></li>
+        <li><a href="#Установка">Установка</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Задачи</a></li>
-    <li><a href="#contributing">Дополнение проекта</a></li>
-    <li><a href="#license">Лицензия</a></li>
-    <li><a href="#contact">Контакты</a></li>
-    <li><a href="#acknowledgments">Благодарность</a></li>
+    <li><a href="#Задачи">Задачи</a></li>
+    <li><a href="#Дополнение-проекта">Дополнение проекта</a></li>
+    <li><a href="#Лицензия">Лицензия</a></li>
+    <li><a href="#Контакты">Контакты</a></li>
+    <li><a href="#Благодарность">Благодарность</a></li>
   </ol>
 </details>
 
