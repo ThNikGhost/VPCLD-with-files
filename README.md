@@ -172,6 +172,6 @@ Thanks!
 [Python.py]: https://img.shields.io/badge/Python-35495E?style=for-the-badge&logo=python&logoColor=blue
 [Python-url]: https://www.python.org/
 [license-shield]: https://img.shields.io/github/license/ThNikGhost/The-system--V-P-C-L-D-work-with-files.svg?style=for-the-badge
-[license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/66f74f825892ecb87a2333d17804b0784b2644f2/LICENSE
+[license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/work-with-files/LICENSE
 [langru-shield]: https://img.shields.io/badge/lang-ru-success
-[langru-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/bf376d3cf77145068dc0f37ae475b4de336b50e9/README.ru.md
+[langru-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/work-with-files/README.ru.md
