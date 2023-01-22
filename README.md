@@ -14,7 +14,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">The-system--V-P-C-L-D-work-with-files
+  <h3 align="center">The system V-P-C-L-D work with files
 </h3>
 
   <p align="center">
