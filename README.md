@@ -85,11 +85,15 @@ There is no way to add your own list yet, but if you want to try with a test set
   ```sh
   git clone https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files
   ```
-2. Run the file windows.py
+2. Install requirements
   ```sh
-  ..\The-system--V-P-C-L-D-work-with-files\python window.py
+  pip install -r requirements.txt
   ```
-3. Use the program and enjoy how records move between files!
+3. Run the file windows.py
+  ```sh
+  python window.py
+  ```
+4. Use the program and enjoy how records move between files!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->

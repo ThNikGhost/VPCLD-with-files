@@ -89,11 +89,15 @@
   ```sh
   git clone https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files
   ```
-2. Запустите файл windows.py
+2. Установите зависимости
   ```sh
-  ..\The-system--V-P-C-L-D-work-with-files\python window.py
+  pip install -r requirements.txt
   ```
-3. Используйте программу и наслаждайтесь тем, как записи перемещаются между файлами!
+3. Запустите файл windows.py
+  ```sh
+  python window.py
+  ```
+4. Используйте программу и наслаждайтесь тем, как записи перемещаются между файлами!
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- ROADMAP -->
