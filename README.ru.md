@@ -36,7 +36,7 @@
   <summary>Содержимое</summary>
   <ol>
     <li>
-      <a href="#about-the-project">О проекте</a>
+      <a href="#О-проекте">О проекте</a>
       <ul>
         <li><a href="#built-with">Построено с помощью</a></li>
       </ul>
