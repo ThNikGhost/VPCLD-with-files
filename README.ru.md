@@ -110,7 +110,7 @@
     - [ ] Английский
     - [ ] Испанский
 
-Полный список предлагаемых функций (и известных проблем) см. в [открытых запросах](https://github.com/othneildrew/Best-README-Template/issues).
+Полный список предлагаемых функций (и известных проблем) см. в [открытых запросах](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues).
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 
