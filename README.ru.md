@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-[![lang ru][langru-shield]][langru-url]
+[![lang en][langen-shield]][langen-url]
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -172,5 +172,5 @@ ThGhost(Nikita) - [@Телеграм](https://t.me/TheNikGreat) - orlov.icloud@m
 [Python-url]: https://www.python.org/
 [license-shield]: https://img.shields.io/github/license/ThNikGhost/The-system--V-P-C-L-D-work-with-files.svg?style=for-the-badge
 [license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/66f74f825892ecb87a2333d17804b0784b2644f2/LICENSE
-[langru-shield]: https://img.shields.io/badge/lang-en-red
-[langru-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/abd47b5338df1c1e87605bbe06fd883857e59f99/README.md
+[langen-shield]: https://img.shields.io/badge/lang-en-red
+[langen-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/abd47b5338df1c1e87605bbe06fd883857e59f99/README.md
