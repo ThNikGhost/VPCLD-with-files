@@ -140,7 +140,7 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/ThNikGho
 
 ThGhost(Nikita) - [@Telegram](https://t.me/TheNikGreat) - orlov.icloud@mail.ru
 
-Project Link: [https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues)
+Project Link: [https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
