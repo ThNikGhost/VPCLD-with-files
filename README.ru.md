@@ -141,7 +141,7 @@
 
 ThGhost(Nikita) - [@Телеграм](https://t.me/TheNikGreat) - orlov.icloud@mail.ru
 
-Ссылка на проект: [https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/issues)
+Ссылка на проект: [https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files)
 
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
