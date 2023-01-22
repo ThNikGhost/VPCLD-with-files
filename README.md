@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+[![lang ru][langru-shield]][langru-url]
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -28,7 +30,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -54,7 +55,6 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -64,17 +64,14 @@ We plan to make a GUI version and a website version so that you can conveniently
 Everything should work like this, let's say you have a list of movies you've watched and a list of movies you'd like to watch.
 In the evening, you and your family watched the movie "The Godfather" and decided to mark it.
 Log in to the app and go to the list of movies you wanted to watch. There you search for "The Godfather" and mark it as "Viewed", confirm your actions and voila!
-"The Godfather" is now in the list of movies you've watched<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+"The Godfather" is now in the list of movies you've watched
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
 * [![Python][Python.py]][Python-url]
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -105,13 +102,13 @@ There is no way to add your own list yet, but if you want to try with a test set
 - [ ] Organize the opportunity to watch current movies/anime/books in a certain genre
 - [ ] Bring everything to the web so that you can view and edit lists from any device
 - [ ] Multi-language Support
-    - [ ] English
+    - [x] Russian
+    - [ ] Englisg
     - [ ] Spanish
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -129,10 +126,10 @@ Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- LICENSE -->
 ## License
 
+Distributed under the MIT License. See [LICENSE.txt](https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/66f74f825892ecb87a2333d17804b0784b2644f2/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,3 +173,5 @@ Thanks!
 [Python-url]: https://www.python.org/
 [license-shield]: https://img.shields.io/github/license/ThNikGhost/The-system--V-P-C-L-D-work-with-files.svg?style=for-the-badge
 [license-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/66f74f825892ecb87a2333d17804b0784b2644f2/LICENSE
+[langru-shield]: https://img.shields.io/badge/lang-ru-success
+[langru-url]: https://github.com/ThNikGhost/The-system--V-P-C-L-D-work-with-files/blob/bf376d3cf77145068dc0f37ae475b4de336b50e9/README.ru.md
