@@ -89,7 +89,7 @@ There is no way to add your own list yet, but if you want to try with a test set
   ```sh
   pip install -r requirements.txt
   ```
-3. Run the file windows.py
+3. Run the file __main__.py
   ```sh
   python __main__.py
   ```

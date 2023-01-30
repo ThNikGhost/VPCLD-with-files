@@ -93,9 +93,9 @@
   ```sh
   pip install -r requirements.txt
   ```
-3. Запустите файл windows.py
+3. Запустите файл __main__.py
   ```sh
-  python window.py
+  python __main__.py
   ```
 4. Используйте программу и наслаждайтесь тем, как записи перемещаются между файлами!
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
