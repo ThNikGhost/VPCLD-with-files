@@ -38,10 +38,9 @@ def writing(received_dict: dict, name_file, sort: bool = False):
             name_file.write(text)        
 
 # Делаю вывод информации из файла проще
-def printing_data(text: str): 
-    file = open(f'text files/{text}.txt', 'r', encoding='UTF-8')
-    output_with_table(file.readlines())
-    file.close()
+def printing_data(text: str):
+    with open(f'text files/{text}.txt', 'r', encoding='UTF-8') as file:
+        output_with_table(file.readlines())
 
 # В этой функции происходит создание таблицы, с помощью библиотеки rich
 # Далее таблица выводится на экран
@@ -71,9 +70,9 @@ def sorting_dict(received_dict: dict):
 def get_random_element():
     import random
     from rich import print
-    file = open('text files/planned.txt', 'r', encoding='UTF-8')
-    text = random.choice(file.readlines())
-    print(f'[purple4]{text}')
+    with open('text files/planned.txt', 'r', encoding='UTF-8') as file:
+        text = random.choice(file.readlines())
+        print(f'[purple4]{text}')
 
 # Переношу выбранный элемент в нужный файл 
 def move_element(where: str):
@@ -81,14 +80,13 @@ def move_element(where: str):
     print('[sky_blue2]Введите номер аниме: ', end='')
     # Объявление нужных переменных
     num_element = int(input())
-    file_planned = open('text files/planned.txt', 'r', encoding='UTF-8')
-    file = open(f'text files/{where}.txt', 'r', encoding='UTF-8')
+    with open('text files/planned.txt', 'r', encoding='UTF-8') as file:
+        list_planned = file.readlines()
+        dict_planned = creating_dict(len(list_planned), list_planned)
+    with open(f'text files/{where}.txt', 'r', encoding='UTF-8') as file:
+        list_file = file.readlines()
+        dict_file = creating_dict(len(list_file), list_file)
     name_file = f'{where}.txt'
-    list_planned = file_planned.readlines()  
-    list_file = file.readlines()
-    dict_file = creating_dict(len(list_file), list_file)
-    dict_planned = creating_dict(len(list_planned), list_planned)
-    # удаляем выбранный элемент из словаря dict_planned, а затем этот же элемент добавляем в dict_file
     for key, value in list(dict_planned.items()):
         if key == num_element:
             del dict_planned[num_element]
@@ -97,10 +95,7 @@ def move_element(where: str):
             print(f'[light_sky_blue3]Аниме [purple4]"{value[:-1]}"[light_sky_blue3] было перемещено в список [green]{name_file}')
             break
     # Открываются файлы уже в режиме записи, чтобы записать уже обновлённые списки
-    file_planned = open('text files/planned.txt', 'w', encoding='UTF-8')
-    file = open(f'text files/{where}.txt', 'w', encoding='UTF-8')
-    writing(sorting_dict(dict_planned), file_planned, True)
-    writing(sorting_dict(dict_file), file, True)
-    # Закрываю файлы
-    file_planned.close()
-    file.close()
+    with open('text files/planned.txt', 'w', encoding='UTF-8') as file:
+        writing(sorting_dict(dict_planned), file, True)
+    with open(f'text files/{where}.txt', 'w', encoding='UTF-8') as file:
+        writing(sorting_dict(dict_file), file, True)

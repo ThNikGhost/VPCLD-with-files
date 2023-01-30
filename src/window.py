@@ -22,12 +22,10 @@ def window():
                       \n[{co1}]3.[{co2}]Брошенные аниме.  \
                       \n[{co1}]4.[{co2}]Любимые аниме  \
                       \n----> """, end='')
-            try:
-                entry_2 = int(input())   
+            entry_2 = input()
+            if entry_2 != '': 
                 dict_entry = {1: 'planned', 2: 'completed', 3: 'dropped', 4: 'liked'}
-                printing_data(dict_entry[entry_2])
-            except:
-                pass
+                printing_data(dict_entry[int(entry_2)])
         elif entry == '2': # Вывод меню, где пользователь выбирает, что он хочет пометить
             os.system('cls')
             print(f'[{co1}]Что хотите пометить?'.center(50))
@@ -35,13 +33,11 @@ def window():
                       \n[{co1}]2.[{co2}]Пометить просмотренное.  \
                       \n[{co1}]3.[{co2}]Пометить любимое аниме.  \
                       \n----> """, end='')
-            try:
-                entry_2 = int(input())
+            entry_2 = input()
+            if entry_2 != '':
                 printing_data('planned')
                 dict_entry = {1: 'dropped', 2: 'completed', 3: 'liked'}
-                move_element(dict_entry[entry_2])
-            except:
-                pass
+                move_element(dict_entry[int(entry_2)])
         elif entry == '3': # Вывод рандомного элемента
             os.system('cls')
             print(f'[{co1}]1.Вывести рандомное аниме. \n ---> ', end='')
