@@ -91,7 +91,7 @@ There is no way to add your own list yet, but if you want to try with a test set
   ```
 3. Run the file windows.py
   ```sh
-  python window.py
+  python __main__.py
   ```
 4. Use the program and enjoy how records move between files!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
